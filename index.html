@@ -357,7 +357,7 @@ const mats=[
 ['Mica và Violet 2','CI 60725, màu tím nâng tông','LOT-MCA-2024-0318','18/03/2024','Merck KGaA Cosmetics','Đức','🇩🇪',G]];
 document.getElementById('rail').innerHTML=mats.map((m,i)=>`
 <article class="mat"><div class="h" style="background:${m[7]}"><span class="idx footnote-e">${i+1}/7</span><span class="flag" aria-hidden="true">${m[6]}</span><h4 class="headline">${m[0]}</h4><div class="role footnote">${m[1]}</div></div>
-<div class="b"><div><span class="l caption1">Số lô</span><span class="v footnote-e">${m[2]}</span></div><div><span class="l caption1">Ngày nhập</span><span class="v footnote-e">${m[3]}</span></div><div><span class="l caption1">Nhà cung cấp</span><span class="v footnote-e">${m[4]}</span></div><div><span class="l caption1">Xuất xứ</span><span class="v footnote-e">${m[5]}</span></div></div></article>`).join('');
+</article>`).join('');
 
 const SHORT='Water, Alcohol, Ethylhexyl Methoxycinnamate, Titanium Dioxide, Isopropyl Palmitate, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Ethylhexyl Triazone, Dimethicone, ... ';
 const FULL='Water, Alcohol, Ethylhexyl Methoxycinnamate, Titanium Dioxide, Isopropyl Palmitate, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Ethylhexyl Triazone, Dimethicone, Butylene Glycol, Niacinamide, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Mica, Titanium Dioxide (CI 77891), Violet 2 (CI 60725), Cyclopentasiloxane, PEG-9 Polydimethylsiloxyethyl Dimethicone, Sodium Chloride, Phenoxyethanol, Potassium Sorbate, Fragrance.';
