@@ -62,7 +62,7 @@ p,h1,h2,h3{font-weight:inherit}
 
 /* group: xác thực + lô mẻ */
 .grp{position:relative;display:flex;flex-direction:column;margin-bottom:-30px;isolation:isolate}
-.xt{position:relative;z-index:2;background:var(--mint);padding:16px;border-radius:34px;margin-bottom:-30px}
+.xt{position:relative;z-index:2;background:var(--mint);padding:16px;border-radius:34px;margin-bottom:-30px;box-shadow:inset 0 0 0 1px #b0e3bd,0 10px 28px rgba(10,67,49,.22)}
 .ticket{background:#fff;border-radius:30px;overflow:hidden;width:100%}
 .t-top{padding:16px;background:linear-gradient(216.13deg,#f1f9f4 5.837%,#fff 63.28%);display:flex;flex-direction:column;gap:8px}
 .t-head{display:flex;align-items:center;gap:12px}
@@ -93,7 +93,7 @@ p,h1,h2,h3{font-weight:inherit}
 .org .w a{color:var(--green);text-decoration:underline}
 .org .w span{color:var(--ink-2)}
 
-.lot{position:relative;z-index:1;display:flex;flex-direction:column;gap:16px;padding:52px 16px 62px;word-break:break-word;
+.lot{position:relative;z-index:1;margin-bottom:-30px;border-radius:34px 34px 0 0;display:flex;flex-direction:column;gap:16px;padding:52px 16px 62px;word-break:break-word;
   background:linear-gradient(141.26deg,rgb(18,121,75) 7.735%,rgb(10,67,49) 92.265%)}
 .lot>h2{color:var(--green-3)}
 .kv{display:flex;flex-direction:column;gap:8px;padding:16px;border-radius:24px;background:rgba(255,255,255,.08)}
@@ -126,7 +126,7 @@ p,h1,h2,h3{font-weight:inherit}
 .mat .b .v{color:var(--ink)}
 
 /* cách dùng */
-.use{background:var(--mint);padding:0 16px 32px;display:flex;flex-direction:column;gap:12px}
+.use{background:var(--mint);padding:0 16px 62px;margin-bottom:-30px;display:flex;flex-direction:column;gap:12px}
 .use>h2{color:var(--ink)}
 .steps{width:100%;height:328.375px;display:flex;flex-direction:column}
 .s2 .c{height:89.375px}
@@ -143,7 +143,7 @@ p,h1,h2,h3{font-weight:inherit}
 
 /* an toàn + footer */
 .tail{display:flex;flex-direction:column}
-.saf{background:var(--mint);padding:0 16px 62px;margin-bottom:-30px;display:flex;flex-direction:column;gap:12px}
+.saf{position:relative;z-index:1;background:var(--mint);padding:62px 16px 62px;border-radius:34px 34px 0 0;display:flex;flex-direction:column;gap:12px}
 .saf>h2{color:var(--ink)}
 .acc{background:#fff;border:1px solid var(--mint-2);border-radius:24px;padding:16px;display:flex;flex-direction:column;gap:12px}
 .acc>button{display:flex;align-items:center;gap:14px;width:100%}
@@ -255,51 +255,6 @@ footer p.c{color:#fff}
       </div>
     </section>
 
-    <section class="lot" aria-label="Truy xuất lô mẻ">
-      <h2 class="title2">Truy xuất lô mẻ và sản xuất</h2>
-      <div class="kv"><h3 class="headline">Lô sản xuất</h3>
-        <dl class="footnote" style="display:contents">
-          <div class="r"><dt>Mã lô</dt><dd>KAO-BIO-2024-LLL-0415</dd></div>
-          <div class="r"><dt>Ngày sản xuất</dt><dd>15/04/2024</dd></div>
-          <div class="r"><dt>Hạn sử dụng</dt><dd>15/04/2027</dd></div>
-          <div class="r"><dt>Dây chuyền</dt><dd>LINE-03-B</dd></div>
-          <div class="r"><dt>Nhà máy</dt><dd>KAO Vietnam – Long An</dd></div>
-          <div class="r"><dt>Xuất xưởng</dt><dd>8.500 đơn vị</dd></div>
-        </dl></div>
-      <div class="kv"><h3 class="headline">Phân phối</h3>
-        <dl class="footnote" style="display:contents">
-          <div class="r"><dt>Nhà phân phối</dt><dd>Công ty TNHH Kao Việt Nam</dd></div>
-          <div class="r"><dt>SKU</dt><dd>BIO-UV-BTU-LILAC-130</dd></div>
-          <div class="r"><dt>Dung tích</dt><dd>130ml</dd></div>
-          <div class="r"><dt>Giá đề xuất</dt><dd>259.000₫</dd></div>
-        </dl></div>
-    </section>
-  </div>
-
-  <section class="ing" aria-label="Thành phần và nguyên liệu">
-    <div class="in">
-      <h2 class="title2">Thành phần và nguyên liệu</h2>
-      <div class="inci">
-        <h3 class="headline">Thành phần đầy đủ (INCI)</h3>
-        <p class="footnote"><span id="inciText"></span> <button type="button" id="inciBtn" class="footnote-e">Xem thêm</button></p>
-      </div>
-    </div>
-    <div class="mats">
-      <h3 class="headline">Truy xuất nguồn gốc 7 nguyên liệu chính</h3>
-      <div class="rail" id="rail" tabindex="0" aria-label="7 nguyên liệu chính, vuốt ngang để xem"></div>
-    </div>
-  </section>
-
-  <section class="use" aria-label="Cách dùng">
-    <h2 class="title2">Dùng thế nào cho đẹp da?</h2>
-    <div class="steps">
-      <div class="step s1"><img class="ic" src="assets/step1.svg" alt=""><div class="c"><h3 class="headline">Làm sạch da</h3><p class="subheadline">Làm sạch da và lau khô hoàn toàn trước khi sử dụng.</p></div></div>
-      <div class="step s2"><img class="ic" src="assets/step2.svg" alt=""><div class="c"><h3 class="headline">Thoa đều toàn thân</h3><p class="subheadline">Thoa đều sản phẩm lên toàn thân trước khi ra nắng. Dùng lượng vừa đủ để đạt hiệu quả chống nắng cao nhất.</p></div></div>
-      <div class="step s3"><img class="ic" src="assets/step3.svg" alt=""><div class="c"><h3 class="headline">Dùng mỗi ngày</h3><p class="subheadline">Nên dùng hàng ngày. Thoa lại sau khi ra nhiều mồ hôi hoặc tiếp xúc nước để duy trì hiệu quả bảo vệ.</p></div></div>
-    </div>
-  </section>
-
-  <div class="tail">
     <section class="saf" aria-label="Lưu ý an toàn">
       <h2 class="title2">Lưu ý an toàn</h2>
       <div class="acc">
@@ -328,6 +283,52 @@ footer p.c{color:#fff}
         <div class="t"><h3 class="headline">Đã kiểm nghiệm da liễu</h3><p class="caption2">Không gây dị ứng và đã được kiểm định lâm sàng.</p></div>
       </div>
     </section>
+  </div>
+
+    <section class="lot" aria-label="Truy xuất lô mẻ">
+      <h2 class="title2">Truy xuất lô mẻ và sản xuất</h2>
+      <div class="kv"><h3 class="headline">Lô sản xuất</h3>
+        <dl class="footnote" style="display:contents">
+          <div class="r"><dt>Mã lô</dt><dd>KAO-BIO-2024-LLL-0415</dd></div>
+          <div class="r"><dt>Ngày sản xuất</dt><dd>15/04/2024</dd></div>
+          <div class="r"><dt>Hạn sử dụng</dt><dd>15/04/2027</dd></div>
+          <div class="r"><dt>Dây chuyền</dt><dd>LINE-03-B</dd></div>
+          <div class="r"><dt>Nhà máy</dt><dd>KAO Vietnam – Long An</dd></div>
+          <div class="r"><dt>Xuất xưởng</dt><dd>8.500 đơn vị</dd></div>
+        </dl></div>
+      <div class="kv"><h3 class="headline">Phân phối</h3>
+        <dl class="footnote" style="display:contents">
+          <div class="r"><dt>Nhà phân phối</dt><dd>Công ty TNHH Kao Việt Nam</dd></div>
+          <div class="r"><dt>SKU</dt><dd>BIO-UV-BTU-LILAC-130</dd></div>
+          <div class="r"><dt>Dung tích</dt><dd>130ml</dd></div>
+          <div class="r"><dt>Giá đề xuất</dt><dd>259.000₫</dd></div>
+        </dl></div>
+    </section>
+
+  <section class="ing" aria-label="Thành phần và nguyên liệu">
+    <div class="in">
+      <h2 class="title2">Thành phần và nguyên liệu</h2>
+      <div class="inci">
+        <h3 class="headline">Thành phần đầy đủ (INCI)</h3>
+        <p class="footnote"><span id="inciText"></span> <button type="button" id="inciBtn" class="footnote-e">Xem thêm</button></p>
+      </div>
+    </div>
+    <div class="mats">
+      <h3 class="headline">Truy xuất nguồn gốc 7 nguyên liệu chính</h3>
+      <div class="rail" id="rail" tabindex="0" aria-label="7 nguyên liệu chính, vuốt ngang để xem"></div>
+    </div>
+  </section>
+
+  <section class="use" aria-label="Cách dùng">
+    <h2 class="title2">Dùng thế nào cho đẹp da?</h2>
+    <div class="steps">
+      <div class="step s1"><img class="ic" src="assets/step1.svg" alt=""><div class="c"><h3 class="headline">Làm sạch da</h3><p class="subheadline">Làm sạch da và lau khô hoàn toàn trước khi sử dụng.</p></div></div>
+      <div class="step s2"><img class="ic" src="assets/step2.svg" alt=""><div class="c"><h3 class="headline">Thoa đều toàn thân</h3><p class="subheadline">Thoa đều sản phẩm lên toàn thân trước khi ra nắng. Dùng lượng vừa đủ để đạt hiệu quả chống nắng cao nhất.</p></div></div>
+      <div class="step s3"><img class="ic" src="assets/step3.svg" alt=""><div class="c"><h3 class="headline">Dùng mỗi ngày</h3><p class="subheadline">Nên dùng hàng ngày. Thoa lại sau khi ra nhiều mồ hôi hoặc tiếp xúc nước để duy trì hiệu quả bảo vệ.</p></div></div>
+    </div>
+  </section>
+
+  <div class="tail">
     <footer>
       <h3 class="title3e">Bioré · Kao Việt Nam</h3>
       <p class="g footnote"><a href="https://biorevietnam.vn" target="_blank" rel="noopener"><b>biorevietnam.vn</b></a> · <a href="https://elabel.gov.vn" target="_blank" rel="noopener"><b>elabel.gov.vn</b></a></p>
