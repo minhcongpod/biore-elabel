@@ -103,7 +103,7 @@ p,h1,h2,h3{font-weight:inherit}
 .lot{position:relative;z-index:1;margin-bottom:-30px;border-radius:34px 34px 0 0;display:flex;flex-direction:column;gap:16px;padding:24px 16px 62px;word-break:break-word;
   background:linear-gradient(142.73deg,rgb(18,121,75) 7.735%,rgb(10,67,49) 92.265%)}
 .lot>h2{color:var(--green-3)}
-.lot{background:linear-gradient(143.71deg,rgb(18,121,75) 7.735%,rgb(10,67,49) 92.265%)}
+.lot{margin-bottom:0;border-radius:0;padding:60px 16px;background:linear-gradient(143.71deg,rgb(18,121,75) 0%,rgb(10,67,49) 100%)}
 .kv{display:flex;flex-direction:column;gap:8px;padding:16px;border-radius:24px;background:rgba(255,255,255,.08)}
 .kv h3{color:#fff}
 .kv .r{display:flex;gap:16px}
@@ -272,24 +272,17 @@ footer p.c{color:#fff}
       </div>
     </section>
 
-    <section class="use" aria-label="Hướng dẫn sử dụng">
+    <section class="lot" aria-label="Hướng dẫn sử dụng">
       <h2 class="title2">Hướng dẫn sử dụng</h2>
-    <div class="steps">
-      <div class="step s1"><img class="ic" src="assets/ic-dial.svg" width="24" height="24" alt=""><div class="c"><h3 class="headline">Chọn chế độ xịt</h3><p class="footnote">Chọn chế độ "Sương" hoặc "Bọt" tùy nhu cầu sử dụng. Vặn về "X" để đóng khi không sử dụng.</p></div></div>
-      <div class="step s2"><img class="ic" src="assets/ic-spray.svg" width="24" height="24" alt=""><div class="c"><h3 class="headline">Xịt và làm sạch</h3><p class="footnote">Xịt trực tiếp vào bề mặt vết bẩn, hoặc dùng vải/bọt biển, chà nhẹ và rửa lại bằng nước.</p></div></div>
-      <div class="step s3"><img class="ic" src="assets/ic-bath.svg" width="24" height="24" alt=""><div class="c"><h3 class="headline">Dùng được cho</h3><div class="chips footnote-e"><span>Bồn tắm</span><span>Rèm nhà tắm</span><span>Bồn rửa tay</span><span>Bồn cầu</span><span>Sàn</span><span>Tường gạch</span></div><p class="footnote">Với chất liệu và dụng cụ khác, nên thử trên một vùng nhỏ trước khi dùng.</p></div></div>
-    </div>
+      <div class="steps">
+        <div class="step s1"><img class="ic" src="assets/ic-dial.svg" width="24" height="24" alt=""><div class="c"><h3 class="headline">Chọn chế độ xịt</h3><p class="footnote">Chọn chế độ "Sương" hoặc "Bọt" tùy nhu cầu sử dụng. Vặn về "X" để đóng khi không sử dụng.</p></div></div>
+        <div class="step s2"><img class="ic" src="assets/ic-spray.svg" width="24" height="24" alt=""><div class="c"><h3 class="headline">Xịt và làm sạch</h3><p class="footnote">Xịt trực tiếp vào bề mặt vết bẩn, hoặc dùng vải/bọt biển, chà nhẹ và rửa lại bằng nước.</p></div></div>
+        <div class="step s3"><img class="ic" src="assets/ic-bath.svg" width="24" height="24" alt=""><div class="c"><h3 class="headline">Dùng được cho</h3><div class="chips footnote-e"><span>Bồn tắm</span><span>Rèm nhà tắm</span><span>Bồn rửa tay</span><span>Bồn cầu</span><span>Sàn</span><span>Tường gạch</span></div><p class="footnote">Với chất liệu và dụng cụ khác, nên thử trên một vùng nhỏ trước khi dùng.</p></div></div>
+      </div>
     </section>
+
   </div>
 
-  <section class="lot" aria-label="Hướng dẫn sử dụng">
-    <h2 class="title2">Hướng dẫn sử dụng</h2>
-    <div class="steps">
-      <div class="step s1"><img class="ic" src="assets/ic-dial.svg" width="24" height="24" alt=""><div class="c"><h3 class="headline">Chọn chế độ xịt</h3><p class="footnote">Chọn chế độ "Sương" hoặc "Bọt" tùy nhu cầu sử dụng. Vặn về "X" để đóng khi không sử dụng.</p></div></div>
-      <div class="step s2"><img class="ic" src="assets/ic-spray.svg" width="24" height="24" alt=""><div class="c"><h3 class="headline">Xịt và làm sạch</h3><p class="footnote">Xịt trực tiếp vào bề mặt vết bẩn, hoặc dùng vải/bọt biển, chà nhẹ và rửa lại bằng nước.</p></div></div>
-      <div class="step s3"><img class="ic" src="assets/ic-bath.svg" width="24" height="24" alt=""><div class="c"><h3 class="headline">Dùng được cho</h3><div class="chips footnote-e"><span>Bồn tắm</span><span>Rèm nhà tắm</span><span>Bồn rửa tay</span><span>Bồn cầu</span><span>Sàn</span><span>Tường gạch</span></div><p class="footnote">Với chất liệu và dụng cụ khác, nên thử trên một vùng nhỏ trước khi dùng.</p></div></div>
-    </div>
-  </section>
 
   <section class="ing" aria-label="Thành phần">
     <h2 class="title2">Thành phần và nguyên liệu</h2>
@@ -297,7 +290,6 @@ footer p.c{color:#fff}
   </section>
 
   <section class="saf" aria-label="Lưu ý an toàn">
-    <h2 class="title2">Lưu ý an toàn</h2>
     <div class="acc">
       <button type="button" aria-expanded="true"><img class="wi" src="assets/warn.png" alt=""><span class="hd headline">Chú ý khi sử dụng</span><img class="ch" src="assets/chevron.svg" alt=""></button>
       <ul class="subheadline">
