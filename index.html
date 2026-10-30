@@ -202,6 +202,28 @@ footer p.c{color:#fff}
 .toast{position:fixed;left:50%;bottom:88px;transform:translate(-50%,16px);background:#1a1a1a;color:#fff;padding:10px 16px;border-radius:99px;opacity:0;transition:.25s;pointer-events:none;z-index:40}
 .toast.on{opacity:1;transform:translate(-50%,0)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* bản 30/10 */
+.media{position:relative;display:flex;flex-direction:column;gap:10px;align-items:center}
+.dots{display:flex;gap:7px;align-items:center}
+.dots i{width:8px;height:8px;border-radius:100px;background:rgba(255,255,255,.5)}
+.dots i.on{width:16px;background:#fff}
+.ttl{text-align:center}
+.xt{border-radius:34px 34px 0 0;padding:24px 16px 46px;margin-bottom:-30px}
+.link .u{color:#263630}
+.guide{position:relative;z-index:3;margin-bottom:-30px;padding:24px 16px 60px;border-radius:34px 34px 0 0;background:linear-gradient(153.37deg,rgb(18,121,75) 7.735%,rgb(10,67,49) 92.265%)}
+.card{background:#fff;border:1px solid var(--mint-2);border-radius:24px;padding:16px;display:flex;flex-direction:column;gap:8px;word-break:break-word}
+.card.r34{border-radius:34px}
+.ch-h{display:flex;align-items:center;gap:8px}
+.ch-h img{width:32px;height:32.738px;object-fit:cover;flex:none}
+.h18{font-size:18px;line-height:28px;font-weight:590;letter-spacing:-.26px;color:var(--ink)}
+.h18b{font-size:18px;line-height:22px;font-weight:590;letter-spacing:-.43px}
+.guide .body{color:#000}
+.info{position:relative;z-index:4;margin-bottom:-30px;background:var(--mint);padding:24px 16px 62px;border-radius:34px 34px 0 0;display:flex;flex-direction:column;gap:24px}
+.info .subheadline{color:var(--ink)}
+.info .acc li p{color:var(--ink-2)}
+.acc>button{gap:8px}
+footer{z-index:5}
 </style>
 </head>
 <body>
@@ -217,7 +239,10 @@ footer p.c{color:#fff}
 
   <section class="hero" aria-label="Sản phẩm">
     <div class="glow" aria-hidden="true"><img src="assets/glow.svg" alt=""></div>
-    <div class="pic"><img src="assets/magiclean.jpg" alt="Chai xịt Magiclean Nước Tẩy Rửa Nhà Tắm Hương Chanh"></div>
+    <div class="media">
+      <div class="pic"><img src="assets/magiclean.jpg" alt="Chai xịt Magiclean Nước Tẩy Rửa Nhà Tắm Hương Chanh"></div>
+      <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+    </div>
     <div class="ttl">
       <div class="nm">
         <h1 class="title2" style="font-weight:700">Magiclean Nước Tẩy Rửa Nhà Tắm Hương Chanh</h1>
@@ -227,71 +252,67 @@ footer p.c{color:#fff}
     </div>
   </section>
 
-  <div class="grp">
-    <section class="xt" aria-label="Xác thực">
-      <div class="ticket">
-        <div class="t-top">
-          <div class="t-head">
-            <div class="txt">
-              <h2 class="subheadline-e" style="font-weight:700">ĐÃ XÁC THỰC NHÃN ĐIỆN TỬ</h2>
-              <p class="caption1">Thông tin sản phẩm được xác thực chính hãng trên Cổng nhãn điện tử quốc gia.</p>
-            </div>
-            <div class="shield"><img src="assets/shield.png" alt="Huy hiệu E-label"></div>
+  <section class="xt" aria-label="Xác thực">
+    <div class="ticket">
+      <div class="t-top">
+        <div class="t-head">
+          <div class="txt">
+            <h2 class="subheadline-e" style="font-weight:700">ĐÃ XÁC THỰC NHÃN ĐIỆN TỬ</h2>
+            <p class="caption1">Thông tin sản phẩm được xác thực chính hãng trên Cổng nhãn điện tử quốc gia.</p>
           </div>
-          <div class="link footnote">
-            <span class="u" id="url">elabel.gov.vn/verify/KAO-BIO-2024-LLL-0415</span>
-            <button class="caption1-e" id="copy" type="button">Sao chép</button>
-          </div>
-          <p class="note footnote">Sao chép mã sau đó truy cập <a href="https://elabel.gov.vn" target="_blank" rel="noopener">elabel.gov.vn</a> để xác thực sản phẩm chính hãng</p>
+          <div class="shield"><img src="assets/shield.png" alt="Huy hiệu E-label"></div>
         </div>
-        <div class="tear"><div class="d"><span class="n l"></span><span class="n r"></span></div></div>
-        <div class="t-info">
-          <div class="row">
-            <div class="cell"><span class="l caption1">GTIN</span><span class="v footnote-e">4710363522014</span></div>
-            <div class="cell"><span class="l caption1">Xuất xứ</span><span class="v footnote-e">Đài Loan</span></div>
-          </div>
-          <div class="row">
-            <div class="cell"><span class="l caption1">Nhóm hàng hoá</span><span class="v footnote-e">Sản phẩm tẩy rửa</span></div>
-            <div class="cell"><span class="l caption1">Định lượng</span><span class="v footnote-e">500ml</span></div>
-          </div>
-          <div class="row">
-            <div class="cell"><span class="l caption1">Ngày sản xuất</span><span class="v footnote-e">15/04/2024</span></div>
-            <div class="cell"><span class="l caption1">Hạn sử dụng</span><span class="v footnote-e">15/04/2027</span></div>
-          </div>
-          <div class="cell"><span class="l caption1">Mã lô sản xuất</span><span class="v footnote-e">KAO-BIO-2024-LLL-0415</span></div>
-          <div class="hr"></div>
-          <div class="addr footnote">
-            <p class="k">Địa chỉ tổ chức/cá nhân chịu trách nhiệm</p>
-            <p><b>Kao (Taiwan) Corporation, No.6, Chung Hua Rd., Hsinchu Industrial</b></p>
-            <p class="m">Areas, Hukou Hsiang, Hsinchu Hsien, Taiwan, R.O.C.</p>
-            <p>&#8203;</p>
-            <p><span class="k">Nhập khẩu bởi</span><br><b>Công ty TNHH Kao Việt Nam</b></p>
-            <p class="m">Lô A12, KCN Long Bình (Amata), P. Long Bình, TP. Đồng Nai, Việt Nam.</p>
-          </div>
+        <div class="link footnote">
+          <span class="u" id="url">elabel.gov.vn/verify/4710365522014</span>
+          <button class="caption1-e" id="copy" type="button">Sao chép</button>
+        </div>
+        <p class="note footnote">Sao chép mã sau đó truy cập <a href="https://elabel.gov.vn" target="_blank" rel="noopener">elabel.gov.vn</a> để xác thực sản phẩm chính hãng</p>
+      </div>
+      <div class="tear"><div class="d"><span class="n l"></span><span class="n r"></span></div></div>
+      <div class="t-info">
+        <div class="row">
+          <div class="cell"><span class="l caption1">GTIN</span><span class="v footnote-e">4710363522014</span></div>
+          <div class="cell"><span class="l caption1">Xuất xứ</span><span class="v footnote-e">Đài Loan</span></div>
+        </div>
+        <div class="row">
+          <div class="cell"><span class="l caption1">Nhóm hàng hoá</span><span class="v footnote-e">Sản phẩm tẩy rửa</span></div>
+          <div class="cell"><span class="l caption1">Định lượng</span><span class="v footnote-e">500ml</span></div>
+        </div>
+        <div class="row">
+          <div class="cell"><span class="l caption1">Ngày sản xuất</span><span class="v footnote-e">15/04/2024</span></div>
+          <div class="cell"><span class="l caption1">Hạn sử dụng</span><span class="v footnote-e">15/04/2027</span></div>
+        </div>
+        <div class="cell"><span class="l caption1">Mã lô sản xuất</span><span class="v footnote-e" aria-hidden="true">&nbsp;</span></div>
+        <div class="hr"></div>
+        <div class="addr footnote">
+          <p class="k">Địa chỉ tổ chức/cá nhân chịu trách nhiệm</p>
+          <p><b>Kao (Taiwan) Corporation, No.6, Chung Hua Rd., Hsinchu Industrial</b></p>
+          <p class="m">Areas, Hukou Hsiang, Hsinchu Hsien, Taiwan, R.O.C.</p>
+          <p>&#8203;</p>
+          <p><span class="k">Nhập khẩu bởi</span><br><b>Công ty TNHH Kao Việt Nam</b></p>
+          <p class="m">Lô A12, KCN Long Bình (Amata), P. Long Bình, TP. Đồng Nai, Việt Nam.</p>
         </div>
       </div>
-    </section>
-
-    <section class="lot" aria-label="Hướng dẫn sử dụng">
-      <h2 class="title2">Hướng dẫn sử dụng</h2>
-      <div class="steps">
-        <div class="step s1"><img class="ic" src="assets/ic-dial.svg" width="24" height="24" alt=""><div class="c"><h3 class="headline">Chọn chế độ xịt</h3><p class="footnote">Chọn chế độ "Sương" hoặc "Bọt" tùy nhu cầu sử dụng. Vặn về "X" để đóng khi không sử dụng.</p></div></div>
-        <div class="step s2"><img class="ic" src="assets/ic-spray.svg" width="24" height="24" alt=""><div class="c"><h3 class="headline">Xịt và làm sạch</h3><p class="footnote">Xịt trực tiếp vào bề mặt vết bẩn, hoặc dùng vải/bọt biển, chà nhẹ và rửa lại bằng nước.</p></div></div>
-        <div class="step s3"><img class="ic" src="assets/ic-bath.svg" width="24" height="24" alt=""><div class="c"><h3 class="headline">Dùng được cho</h3><div class="chips footnote-e"><span>Bồn tắm</span><span>Rèm nhà tắm</span><span>Bồn rửa tay</span><span>Bồn cầu</span><span>Sàn</span><span>Tường gạch</span></div><p class="footnote">Với chất liệu và dụng cụ khác, nên thử trên một vùng nhỏ trước khi dùng.</p></div></div>
-      </div>
-    </section>
-
-  </div>
-
-
-  <section class="ing" aria-label="Thành phần">
-    <h2 class="title2">Thành phần và nguyên liệu</h2>
-    <p class="subheadline">Nước, Sodium citrate, Butoxydiglycol, Lauramidopropyl Betaine, Etidronic Acid, Aromatic alcohol, Chất thơm.</p>
+    </div>
   </section>
 
-  <section class="saf" aria-label="Lưu ý an toàn">
+  <section class="guide" aria-label="Hướng dẫn sử dụng">
+    <div class="card">
+      <div class="ch-h"><img src="assets/ic-guide.png" alt=""><h2 class="h18">Hướng dẫn sử dụng</h2></div>
+      <div class="subheadline body">
+        <p>Chọn chế độ "Sương" hoặc "Bọt" tùy nhu cầu sử dụng. Vặn về "X" để đóng khi không sử dụng. Xịt trực tiếp vào bề mặt vết bẩn, hoặc dùng vải/bọt biển, chà nhẹ và rửa lại bằng nước.</p>
+        <p>Thích hợp cho: Bồn tắm, rèm che nhà tắm, bồn rửa tay, bồn cầu, sàn, tường gạch... Với những chất liệu và dụng cụ khác, nên thử trên bề mặt nhỏ trước khi dùng.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="info" aria-label="Thành phần và cảnh báo">
+    <div class="card r34">
+      <div class="ch-h"><img src="assets/ic-flask.png" alt=""><h2 class="h18">Thành phần và nguyên liệu</h2></div>
+      <p class="subheadline">Nước, Sodium citrate, Butoxydiglycol, Lauramidopropyl Betaine, Etidronic Acid, Aromatic alcohol, Chất thơm.</p>
+    </div>
     <div class="acc">
-      <button type="button" aria-expanded="true"><img class="wi" src="assets/warn.png" alt=""><span class="hd headline">Chú ý khi sử dụng</span><img class="ch" src="assets/chevron.svg" alt=""></button>
+      <button type="button" aria-expanded="true"><img class="wi" src="assets/warn.png" alt=""><span class="hd h18b">Thông tin cảnh báo</span><img class="ch" src="assets/chevron.svg" alt=""></button>
       <ul class="subheadline">
         <li><i></i><p>Để xa tầm tay trẻ em</p></li>
         <li><i></i><p>Tránh tiếp xúc với mắt. Trường hợp sử dụng sản phẩm trên tầm mắt, nên xịt vào miếng vải hoặc bọt biển và lau.</p></li>
